@@ -1,0 +1,101 @@
+@import "./unit";
+@import "./varibles";
+
+h3 {
+    margin: 7px 5px 7px 0;
+    color: $primary_900;
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+p {
+    color: rgb(49, 49, 49);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    header {
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: $container_width;
+            color: $primary_900;
+
+        }
+
+        nav {
+            .section-count {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+
+                li {
+                    margin-left: .35rem;
+                }
+
+                li:first-of-type {
+                    content: "02";
+                }
+            }
+        }
+    }
+
+    main {
+        #first {
+            #my-img-section {
+                background-image: url(../../../image/IMG_20230204_220205_100.jpg);
+                @include background-effect;
+                min-height: 500px;
+                margin: $margin_center;
+            }
+
+            #my-about-section {
+                .container {
+                    width: $container_width;
+                    margin: $margin_center;
+                }
+            }
+
+        }
+
+        #second {
+            .parallax {
+                background-image: url(../../../image/img_parallax3.jpg);
+                @include background-effect;
+                min-height: 500px;
+                margin: $margin_center;
+                position: relative;
+
+                span {
+                    font-size: larger;
+                    font-weight: bold;
+                    color: $primary_900;
+                    background-color: rgb(34, 34, 34);
+                    border-radius: 5px;
+                    padding: 15px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                    transition: all 1s;
+                }
+            }
+
+            .about-parallax {
+                .container {
+                    width: $container_width;
+                    margin: $margin_center;
+                }
+            }
+        }
+    }
+}
