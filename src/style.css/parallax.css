@@ -18,7 +18,7 @@ body header {
   width: 100%;
   padding: 30px 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   z-index: 100;
 }
@@ -26,6 +26,7 @@ body header div .logo {
   font-size: 2rem;
   color: #359381;
   pointer-events: none;
+  margin-right: 270px;
 }
 body header nav a {
   color: #359381;
@@ -38,6 +39,42 @@ body header nav a:hover,
 body header nav a.active {
   background-color: #359381;
   color: #fff;
+}
+body main section.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 44px;
+}
+body main section.parallax h2#text {
+  color: #fff;
+  position: absolute;
+  font-size: 5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+body main section.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+body main section.sec {
+  position: relative;
+  background-color: #003329;
+  padding: 100px;
+}
+body main section.sec h2 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+body main section.sec p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=parallax.css.map */

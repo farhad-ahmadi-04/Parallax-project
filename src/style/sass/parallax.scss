@@ -20,7 +20,7 @@ body {
         width: 100%;
         padding: 30px 30px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         z-index: 100;
 
@@ -29,6 +29,7 @@ body {
                 font-size: 2rem;
                 color: $parallax_color;
                 pointer-events: none;
+                margin-right: 270px;
             }
         }
 
@@ -44,8 +45,52 @@ body {
             a:hover,
             a.active {
                 background-color: $parallax_color;
-                color: $secondary_color;
+                color: $hover_color;
 
+            }
+        }
+    }
+
+    main {
+        section.parallax {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-bottom: 44px;
+
+            h2#text {
+                color: $hover_color;
+                position: absolute;
+                font-size: 5em;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                pointer-events: none;
+            }
+        }
+
+        section.sec {
+            position: relative;
+            background-color: $sec_background;
+            padding: 100px;
+
+            h2 {
+                font-size: 3em;
+                color: $hover_color;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 1em;
+                color: $hover_color;
+                font-weight: 300;
             }
         }
     }
