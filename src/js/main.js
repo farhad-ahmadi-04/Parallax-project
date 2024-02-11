@@ -22,6 +22,5 @@ window.addEventListener("scroll", srolling)
 function srolling(e) {
     if (window.scrollY > 0) {
         header.style.top = (window.scrollY * (-1)) + "px"
-        // text.style.top = ((window.scrollY - window.scrollY) + 500) + "px"
     }
 }

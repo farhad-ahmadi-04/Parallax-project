@@ -1,20 +1,20 @@
 @import "./unit";
 @import "./varibles";
 
-h3 {
-    margin: 7px 5px 7px 0;
-    color: $primary_900;
-    font-size: 1.75rem;
-    font-weight: 900;
-}
-
-p {
-    color: rgb(49, 49, 49);
-}
-
 body {
     margin: 0;
     padding: 0;
+
+    h3 {
+        margin: 7px 5px 7px 0;
+        color: $primary_900;
+        font-size: 1.75rem;
+        font-weight: 900;
+    }
+
+    p {
+        color: rgb(49, 49, 49);
+    }
 
     header {
         padding: 0 10px;
@@ -75,11 +75,11 @@ body {
                 margin: $margin_center;
                 position: relative;
 
-                span {
+                .parallax-page {
                     font-size: larger;
                     font-weight: bold;
                     color: $primary_900;
-                    background-color: rgb(34, 34, 34);
+                    background-color: $primary_background;
                     border-radius: 5px;
                     padding: 15px;
                     position: absolute;

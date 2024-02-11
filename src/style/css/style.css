@@ -1,18 +1,16 @@
 /* Create the parallax scrolling effect */
-h3 {
+body {
+  margin: 0;
+  padding: 0;
+}
+body h3 {
   margin: 7px 5px 7px 0;
   color: rgb(169, 169, 169);
   font-size: 1.75rem;
   font-weight: 900;
 }
-
-p {
+body p {
   color: rgb(49, 49, 49);
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 body header {
   padding: 0 10px;
@@ -62,7 +60,7 @@ body main #second .parallax {
   margin: 0 auto;
   position: relative;
 }
-body main #second .parallax span {
+body main #second .parallax .parallax-page {
   font-size: larger;
   font-weight: bold;
   color: rgb(169, 169, 169);
