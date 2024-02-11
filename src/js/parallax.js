@@ -10,14 +10,14 @@ let limit = document.body.offsetHeight - window.innerHeight;
 
 // function
 /**
- * effevt for scroll on images & text
+ * affect for scroll on images & text
  */
 window.addEventListener("scroll", (e) => {
     // get value of scrollY
     let value = window.scrollY;
     // set condition to don't scroll more that limitation
     if (limit > value) {
-        // set effect on images & text when user scrolls down & up
+        // set affect on images & text when user scrolls down & up
         text.style.marginTop = value * 2.5 + "px";
         leaft.style.top = value * -1.5 + "px";
         leaft.style.left = value * 1.5 + "px";
