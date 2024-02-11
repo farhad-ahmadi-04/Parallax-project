@@ -1,0 +1,52 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import "./varibles";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sens-serif";
+}
+
+body {
+    background-color: $body_background;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+
+        div {
+            .logo {
+                font-size: 2rem;
+                color: $parallax_color;
+                pointer-events: none;
+            }
+        }
+
+        nav {
+            a {
+                color: $parallax_color;
+                font-weight: 600;
+                margin: 0 10px;
+                padding: 6px 15px;
+                border-radius: 20px;
+            }
+
+            a:hover,
+            a.active {
+                background-color: $parallax_color;
+                color: $secondary_color;
+
+            }
+        }
+    }
+}

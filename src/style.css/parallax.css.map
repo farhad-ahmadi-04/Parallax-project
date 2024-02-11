@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../style/sass/parallax.scss","../style/sass/_varibles.scss"],"names":[],"mappings":"AAAQ;AAGR;EACI;EACA;EACA;EACA;;;AAGJ;EACI,kBCNa;EDOb;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGI;EACI;EACA,OCvBA;EDwBA;;AAKJ;EACI,OC9BA;ED+BA;EACA;EACA;EACA;;AAGJ;AAAA;EAEI,kBCvCA;EDwCA,OCvCC","file":"parallax.css"}
